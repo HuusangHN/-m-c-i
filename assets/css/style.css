@@ -1,0 +1,1334 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Dancing Script", cursive;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap;
+    justify-content: center; */
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .icon-heart {
+    color: #e74c3c;
+    font-size: 30px;
+}
+
+h1 {
+    font-size: 5vw;
+    font-weight: 100;
+    margin: 0;
+    font-family: "Dancing Script", cursive;
+    color: black;
+    letter-spacing: 0.05em;
+}
+
+header h1 {
+    font-size: 2vw;
+}
+
+.h2-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.h2-container h2 {
+    font-size: 1em;
+    margin: 20px 0;
+    color: #777;
+    opacity: 0.6;
+    font-family: 'Arial', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.line {
+    display: inline-block;
+    width: 2%;
+    height: 2px;
+    margin: 4px;
+    background: black;
+    opacity: 0.4;
+    vertical-align: middle;
+}
+
+.h2-container::after {
+    content: '';
+    display: block;
+    width: auto;
+    height: 2px;
+    background: #000000;
+    opacity: 0.2;
+    margin: 10px auto 0;
+}
+
+nav { margin-top: 10px; }
+
+nav a {
+    font-family: "Comfortaa", sans-serif;
+    margin: 0 8px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+nav a:hover {color: #c89d9c;}
+
+.logo {display: none;}
+
+.logo a {text-decoration: none;}
+
+.logo span {
+    font-size: 32px;
+    color: #E2B7B0;
+}
+
+.logo .icon-heart {
+    font-size: 22px;
+    color: #E2B7B0;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #E2B7B0; 
+    border: none; 
+    color: white; 
+    padding: 10px; 
+    border-radius: 5px;  
+    width: 5%;
+    margin-left: auto;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.couple-info,
+.save-the-date {width: 100%;}
+
+.couple-info {
+    position: relative;
+    /* width: 100vw; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 600px;
+    background-size: cover; 
+    background-position: center;
+    overflow: hidden; 
+    /* margin: 40px 0; */
+    /* height: 800px; */
+    transition: background-image 1s ease;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-size: cover; */
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    z-index: 0;
+    transition: transform 0.3s ease;
+}
+
+.text-container {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.line-container .line {
+    width: 6%;
+    height: 2px;
+    background: black;
+    opacity: 0.4;
+    margin: 0 10px;
+}
+
+.text-container h3 {
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.text-container .icon-heart {
+    color: #fa5c43;
+    opacity: 0.8;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+}
+
+.text-container p {
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.background1 {
+    background-image: url('assets/bg1.jpg');
+}
+
+.background2 {
+    background-image: url('assets/bg2.jpg');
+}
+
+.background3 {
+    background-image: url('assets/bg3.jpg');
+}
+
+.save-the-date {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    /* border: 1px solid #d1d1d1; */
+}
+
+.left-section, .right-section {
+    width: 45%;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #d1d1d1;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* height: 420px; */
+}
+
+.square-frame {text-align: center;}
+
+.left-section {
+    width: 28%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.left-section .square-frame {
+    width: 88%;
+    height: 88%;
+    padding: 20px;
+    background: url('/assets/images/Wedding.jpg') no-repeat center center;
+    border: 4px solid #E2B7B0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.left-section h2 {
+    font-size: 2.5em;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-family: "Dancing Script", cursive;
+    color: #333;
+}
+
+.left-section h3 {
+    margin-top: 4px;
+    margin-bottom: 16px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 15px;
+    color: #555;
+}
+
+.left-section p {
+    font-size: 12px;
+    font-family: "Comfortaa", sans-serif;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.btn {
+    background-color: #ff7e5f;
+    color: white;
+    border: none;
+    margin-top: 24px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* font-size: 1em; */
+    /* min-width: 150px; */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {background-color: #ff6b52;
+}
+
+.divider {
+    border: none; /* Bỏ viền mặc định */
+    height: 2px; /* Chiều cao của đoạn gạch */
+    background-color: #d1d1d1; /* Màu của đoạn gạch */
+    margin: 20px 0; /* Khoảng cách trên và dưới */
+}
+
+.right-section {
+    /* width: 28%; */
+    height: 400px;
+    text-align: center;
+}
+
+.right-section h2 {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+.calendar {
+    margin: 20px;
+    width: auto;
+}
+
+.calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.week, .day {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.calendar th, .calendar td {
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    text-align: center;
+}
+
+.calendar th {
+    background-color: #f8f8f8;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.calendar td {
+    font-size: 14px;
+    position: relative;
+}
+
+.highlight {
+    background-color: #ff7e5f;
+    color: white;
+    border-radius: 50%;
+}
+
+.countdown {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    width: auto;
+}
+
+.countdown-item {
+    flex: 1;
+    text-align: center;
+    /* width: 40px; */
+    /* margin: 0 5px; */
+}
+
+.countdown p {
+    font-size: 2em;
+    margin: 0;
+    color: #e63946;
+    opacity: 0.8;
+}
+
+.countdown span {
+    display: block;
+    font-size: 1.5em;
+    color: #e63946;
+    opacity: 0.6;
+}
+
+.couple-container {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.couple-infomation {
+    text-align: center;
+}
+
+.flower-image {
+    width: 100px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.flower-image:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2) saturate(1.2);
+}
+
+.couple-infomation h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.couple-infomation p {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1em;
+    color: #666;
+    margin: 20px 0;
+}
+
+.profile-container {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin: 10px auto;
+    width: 40%;
+    transition: transform 0.3s, box-shadow 0.3s; /* Hiệu ứng chuyển tiếp */
+}
+
+.profile-container:hover {
+    transform: translateY(-5px); /* Nâng lên khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tăng độ bóng khi hover */
+}
+
+.image-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s; /* Hiệu ứng chuyển tiếp cho hình ảnh */
+}
+
+.image-section img:hover {
+    transform: scale(1.05); /* Phóng to hình ảnh khi hover */
+}
+
+.info-section {
+    flex: 2;
+    padding: 20px;
+}
+
+.info-section h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.info-section p {
+    margin: 5px 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.icon {
+    margin-right: 15px; /* Khoảng cách giữa các biểu tượng */
+    color: #555; /* Màu sắc biểu tượng */
+    text-decoration: none; /* Bỏ gạch chân */
+    font-size: 1.5em; /* Kích thước biểu tượng */
+}
+
+.icon:hover {
+    color: #007bff; /* Màu khi hover */
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.act-btn {
+    background-color: #fa6464;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.act-btn:hover {
+    background-color: #e93535;
+}
+
+.video {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.wedding-video {
+    background-image: url('/assets/images/bp.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 90vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.wedding-video p {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.6cm;
+    margin: 0 0 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.wedding-video h2 {
+    font-size: 20px;
+    margin: 6px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.play-button {
+    margin-top: 6px; /* Khoảng cách 6px trên cùng */
+    font-size: 100px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 60px;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+}
+
+.event-container {
+    width: 80%;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.event-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.event-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.event-title h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.event-title p {
+    font-family: "Comfortaa", sans-serif;
+    margin-top: 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.event-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.event-container td {
+    padding: 0px;
+    vertical-align: top;
+    border: none;
+}
+
+.events {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 60%;
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: #fff;
+}
+
+.events:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.events:hover {
+    transform: translateY(-2px);
+}
+
+.events .details {
+    margin: 0 12px;
+    /* width: 15%; */
+    flex: 1;
+}
+
+.events .details h3 {
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.events .details p {
+    font-family: "Comfortaa", sans-serif;
+    margin: 12px 0 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.events .details .date {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1em;
+    color: #000000;
+    margin: 12px 0;
+    padding-top: 6px;
+}
+
+.events .img-holder {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.events .img-holder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.picture-section {
+    width: 80%;
+    margin: auto;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.picture-title {
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e2e2e2;
+    padding-bottom: 10px;
+}
+
+.picture-title h2 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.picture-title p {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1em;
+    color: #666;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 45%;
+    margin: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    border-radius: 8px;
+}
+
+.gallery.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.wedding-party-section {
+    width: 100%;
+    margin: 12px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.picture-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.picture-title h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.picture-title p {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1em;
+    color: #666;
+}
+
+.bridesmaids-groomsmen-section {
+    display: flex;
+    justify-content: center;
+}
+
+.bridesmaids,
+.groomsmen {
+    flex: 0 0 20%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.member:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.02);
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: transform 0.3s;
+}
+
+.member:hover .avatar {
+    transform: scale(1.1);
+}
+
+.info {
+    flex: 1;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.info p {
+    margin: 0;
+    color: #666;
+}
+
+.wedding-event-section {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wedding-event-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.events-desc {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    height: 50vh;
+}
+
+.event-desc {
+    width: 15%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.3s;
+}
+
+.event-desc.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.event-desc:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-2px, 0); }
+    50% { transform: translate(2px, 0); }
+    75% { transform: translate(-2px, 0); }
+    100% { transform: translate(0); }
+}
+
+.event-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 4px;
+    overflow: hidden;
+
+}
+
+.event-desc h3 {
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.event-time,
+.event-address {
+    margin: 4px 0;
+    text-align: center;
+    color: #000000;
+    font-size: 1.2em;
+}
+
+.event-desc .buttons {
+    text-align: center;
+    margin-top: 4px;
+}
+
+.event-desc .btn {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border: 1px solid #d1d1d1;
+}
+
+.event-desc .btn:hover {
+    background-color: #2980b9;
+}
+
+.Send-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+}
+
+.Send-container .content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 80%;
+}
+
+.contact-form, .message-display {
+    width: 40%;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Send-container h2 {
+    color: #333;
+}
+
+textarea, input[type="text"], input[type="email"] {
+    width:90%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 30%;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.message-output {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 100px;
+    text-align: left;
+}
+
+.input-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.icon {
+    font-size: 20px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.icon-active {
+    color: #f39c12;
+}
+
+.emoji-picker {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.emoji {
+    font-size: 16px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 120px;
+}
+
+.suggestion-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.suggestion-item {
+    background-color: #eaeaea;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.suggestion-item:hover {
+    background-color: #d0d0d0;
+}
+
+.sample-messages {
+    margin: 10px 0;
+}
+
+.sample-button {
+    background-color: #eaeaea;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.sample-button:hover {
+    background-color: #d0d0d0;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px; /* Bắt đầu ở trên cùng */
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    pointer-events: none; /* Không cho phép tương tác với tuyết */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-bottom: 0;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header .icon-heart {
+        font-size: 24px;
+    }
+
+    .couple-info {
+        min-height: 400px;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        max-height: 0;
+        opacity: 0;
+        /* align-items: center; */
+        transform: translateY(-10px);
+        overflow: hidden;
+        transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .nav-links.active {
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .logo {
+        float: left;
+        padding: 20px 0px 12px 12px;
+        display: flex;
+        align-items: center;
+        /* text-decoration: none; */
+    }
+    
+    .menu-toggle {
+        display: block;
+        width: 5%;
+    }
+
+    h1 {
+        font-size: 6vw; 
+    }
+
+    h2 {
+        font-size: 1.5em; 
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    .couple-info {
+        height: 70vh;
+    }
+
+    .couple-info h3 {
+        font-size: 4vw; 
+    }
+
+    .couple-info p {
+        font-size: 3vw; 
+    }
+
+    .save-the-date {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .left-section, .right-section {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .btn {
+        min-width: 100px;
+    }
+
+    .right-section {
+        height: 320px;
+    }
+
+    .calendar table {
+        font-size: 8px;
+    }
+    
+    .calendar th, .calendar td {
+        font-size: 10px;
+    }
+    
+    .countdown {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .countdown-item {
+        margin: 5px 0;
+    }
+
+    .countdown p {
+        font-size: 1.5em;
+    }
+
+    .countdown span {
+        font-size: 0.8em;
+    }
+
+    .couple-infomation h1 {
+        font-size: 2em;
+    }
+
+    .couple-infomation p {
+        font-size: 1em;
+    }
+
+    .profile-container {
+        flex-direction:column;
+        width:80%;
+    }
+
+    .icon {
+        font-size: 1em;
+    }
+
+    .action-buttons {
+        flex-direction:column;
+    }    
+    
+    .act-btn {
+        margin-bottom: 12px;
+    }
+
+    .top-area {
+        padding: 20px 10px;
+    }
+    .video-play-btn {
+        font-size: 20px;
+    }
+
+    .wedding-video p {
+        font-size: 36px;
+    }
+    
+    .wedding-video h2 {
+        font-size: 20px;
+    }
+    
+    .play-button {
+        font-size: 50px;
+    }
+
+    .events {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .events .img-holder {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .event-title h2 {
+        font-size: 2em;
+    }
+
+    .event-title p {
+        font-size: 0.9em;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        width: 70%;
+    }
+
+    .picture-title h2 {
+        font-size: 2em;
+    }
+
+    .picture-title p {
+        font-size: 0.9em;
+    }
+
+    .bridesmaids-groomsmen-section {
+        flex-direction: column;
+    }
+
+    .bridesmaids,
+    .groomsmen {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .wedding-event-section {
+        width: 90%;
+    }
+
+    .events-desc {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .event-desc .event {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+}
+
